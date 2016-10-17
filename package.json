@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/Sherman-Chen/2016-09-mvp#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.6.4",
+    "morgan": "^1.7.0"
   }
 }
