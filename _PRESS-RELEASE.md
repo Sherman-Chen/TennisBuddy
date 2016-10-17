@@ -1,4 +1,4 @@
-# Project Name #
+# Tennis Buddy #
 
 <!-- 
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -17,28 +17,29 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  > Tennis Buddy
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+		This application is for all lovers of the great sport of Tennis, whether you are a burgeoning enthusiast, weekend warrior, or even an emerging ATP prospect, the benefit you will gain from using Tennis Buddy is simple; quick and easy match-making!
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+	Tennis Buddy aims to pair you with another Tennis Buddy user and connect for the simple goal of playing Tennis! You can easily search for, or find, a buddy to pair up with and play tennis! Tennis Buddy will allow for simple, and convenient integration of:
+	finding a court location, scheduling a time to meet, and afterwards creating and storing a connection for more Tennis playing later! 
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > Tennis is a fantastic sport, however unless you already know someone else who plays, more likely than not your only buddy is going be the wall. While the wall is a fantastic buddy, it just does not offer the same level of engagement and socialization as playing tennis live with another fellow tennis lover. Tennis Buddy serves to help you create and maintain buddies to better enjoy the game. 
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  > Tennis buddy maintains an active database of fellow tennis enthusiasts for you to buddy up with and get your game on! Along with creating the connections, Tennis Buddy will also assist in finding a location to play, and time management scheduling if needed. Simply put Tennis Buddy does most, if not all of, the busy work of finding a hitting buddy and allows you to better focus on the fun part, playing the game! 
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  > "Why pay $150 a month to join a tennis club when with one click you can just as easily find a fellow tennis enthusiast to enjoy the game with?" -Sherman Chen Founder, CEO, CTO, Customer Service, Janitor, and Sole Employer/Employee of Tennis Buddy
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > As simple as completing the sign up process and clicking 'Find me a buddy!' to start enjoying some Tennis!
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > "I love tennis, but it is pretty difficult to find someone else who does too. Playing the wall was just not enough. Thankfully Tennis Buddy solves this problem by providing a fast and easy service to find a rallying partner with just one click!" -not Sherman, dedicated consumer since 10/17/2016
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  > What are you waiting for? Find your Tennis Buddy today!
