@@ -9,16 +9,8 @@ app.get('/', function(req, res) {
   res.send('Under Construction');
 });
 
-app.use('/landing', express.static('public'));
-
-app.get('/landing', function(req, res) {
-  res.sendfile('public/index.html', {root: __dirname }, function(err) {
-    if (err) {
-      console.log(err);
-    } else {
-      console.log('landing served');
-    }
-  });
+app.get('*', function(req, res) {
+  res.sendfile();
 });
 
 // start server
