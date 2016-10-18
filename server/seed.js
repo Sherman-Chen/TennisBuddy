@@ -4,9 +4,10 @@ var User = require('./models/user.js');
 
 var seeds = [
   {"username": "Sherman", "password": "testing", "buddies": ["Bob", "John"]},
-  {"username": "notSherman", "password": "testing", "buddies": ["Roger", "John"]},
+  {"username": "notSherman", "password": "testing", "buddies": ["Roger", "John", "weekndWarrior", "fuzzyYelLowBALLS", "FedexExpress", "Djoker", "Nadal", "1hbh4evers", "serveANDvolley"]},
   {"username": "AlsoNotSherman", "password": "testing"},
-  {"username": "weekndWarrior", "password": "tennis", "buddies": ["Sherman", "notSherman"]}
+  {"username": "weekndWarrior", "password": "tennis", "buddies": ["Sherman", "notSherman"]},
+  {"username": "shermango", "password": "testing", "buddies": ["Roger", "John", "weekndWarrior", "fuzzyYelLowBALLS", "FedexExpress", "Djoker", "Nadal", "1hbh4evers", "serveANDvolley"]},
 ];
 
 seeds.forEach(function(seed, i) {
