@@ -44,7 +44,7 @@ router.post('/users', function(req, res) {
   var user = req.body;
   User.create(user, function(err, user) {
     if (err) {
-      return res.status(500.json({err: err.message}));
+      return res.status(500).json({err: err.message});
     }
   })
   res.json({user: user});
