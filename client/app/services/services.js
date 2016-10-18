@@ -8,7 +8,15 @@ angular.module('TennisBuddy.services', [])
     });
   };
 
+  var addUser = function(newUser) {
+    return $http.post('/api/users').then(function(resp) {
+      console.log(resp);
+      return resp;
+    });
+  }
+
   return {
-    getUsers: getUsers
+    getUsers: getUsers,
+    addUser: addUser
   }
 });
