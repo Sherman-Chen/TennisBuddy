@@ -1,16 +1,20 @@
 'use strict'
 
 // mock data & etc
-var mock = require('./mock/mockusers.json');
+// var mock = require('./mock/mockusers.json');
 var sfCourts = require('./mock/tennis_court_data.json');
 var port = process.env.PORT || 8888;
 
 var express = require('express');
+var User = require('./models/user.js');
+
+// instantiate server and router
 var app = express();
 var router = express.Router();
 
-// mongoDB
+// mongoDB + seed data
 require('./database');
+require('./seed');
 
 // serve angular client
 app.use('/', express.static('client'));
@@ -20,13 +24,13 @@ app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 app.use('/api', router);
 
 router.get('/users', function(req, res) {
-  // UserSchema.find(function(err, user) {
-  //   if (err) {
-  //     res.send(err);
-  //   }
-  //   res.json(user);
-  // }); 
-  res.json({users: mock});
+  User.find({}, function(err, users) {
+     if (err) {
+      return res.status(500).json({message: err.message});  
+     }
+     res.json({users: users});
+   }); 
+  // res.json({users: mock});
 });
 
 router.post('/users', function(req, res) {
