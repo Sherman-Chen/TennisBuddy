@@ -1,16 +1,47 @@
 'use strict'
 
+var mongoose = require('mongoose');
+var mock = require('./mock/mockusers.json');
 var port = process.env.PORT || 8888;
+
+mongoose.connect('mongodb://localhost/tennisbuddy');
 
 var express = require('express');
 var app = express();
 
-app.get('/', function(req, res) {
-  res.send('Under Construction');
+app.use('/', express.static('client'));
+app.use('/bower_components',  express.static(__dirname + '/bower_components'));
+
+// default user schema
+var UserSchema = new mongoose.Schema({
+  username: {
+    type: String,
+    required: true,
+    unique: true
+  },
+
+  password: {
+    type: String,
+    required: true
+  },
+
+  buddies: {
+    type: Array
+  }
 });
 
-app.get('*', function(req, res) {
-  res.sendfile();
+app.get('/api/users', function(req, res) {
+  // UserSchema.find(function(err, user) {
+  //   if (err) {
+  //     res.send(err);
+  //   }
+  //   res.json(user);
+  // }); 
+  res.json({users: mock});
+});
+
+app.post('/api/users', function(req, res) {
+  // post to DB with new user
 });
 
 // start server
