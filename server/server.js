@@ -17,7 +17,7 @@ require('./database');
 require('./seed');
 
 // serve angular client
-app.use('/', express.static('client'));
+app.use('/', express.static('../client'));
 app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 
 // API routing
@@ -47,6 +47,3 @@ app.listen(port, function() {
 });
 
 
-
-// things to do
-// modularize express server, and also create routing
