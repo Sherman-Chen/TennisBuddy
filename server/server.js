@@ -41,6 +41,13 @@ router.get('/courts', function(req, res) {
 
 router.post('/users', function(req, res) {
   // post to DB with new user
+  var user = req.body;
+  User.create(user, function(err, user) {
+    if (err) {
+      return res.status(500.json({err: err.message}));
+    }
+  })
+  res.json({user: user});
 });
 
 
