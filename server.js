@@ -2,6 +2,7 @@
 
 var mongoose = require('mongoose');
 var mock = require('./mock/mockusers.json');
+var sfCourts = require('./mock/tennis_court_data.json');
 var port = process.env.PORT || 8888;
 
 mongoose.connect('mongodb://localhost/tennisbuddy');
@@ -42,6 +43,10 @@ app.get('/api/users', function(req, res) {
 
 app.post('/api/users', function(req, res) {
   // post to DB with new user
+});
+
+app.get('/api/courts', function(req, res) {
+  res.json({courts: sfCourts});
 });
 
 // start server

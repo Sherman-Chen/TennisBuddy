@@ -1,7 +1,8 @@
 angular.module('TennisBuddy', [
   'ngRoute',
   'TennisBuddy.landing',
-  'TennisBuddy.signin'
+  'TennisBuddy.signin',
+  'TennisBuddy.services'
 ])
 .config(function($routeProvider) {
   $routeProvider
