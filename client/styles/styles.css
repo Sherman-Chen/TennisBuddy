@@ -1,5 +1,14 @@
 body {
+	background-color: mediumseagreen;
+}
+
+.navbar {
+	background-color: mediumseagreen;	
+}
+
+.landing {
 	background-image: url('http://yesofcorsa.com/wp-content/uploads/2015/08/1710_tennis.jpg');
+	height: 800px;
 }
 
 .title {
@@ -10,4 +19,27 @@ body {
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
+}
+
+.usertab {
+	border: 1px solid black;
+	height: 500px;
+	width: 300px;
+	background-color: white;
+}
+
+.profiletab {
+	border: 1px solid black;
+	height: 500px;
+	width: 900px;
+	background-color: white;
+}
+
+.brand-logo {
+	margin-left: 3px;
+}
+
+.greeting {
+	background-color: white;
+	height: 100px;
 }

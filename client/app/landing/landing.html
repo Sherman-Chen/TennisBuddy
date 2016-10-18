@@ -1,26 +1,39 @@
-<div class="row landing">
-	<div class="card-panel large white z-depth-5 col s12 m6 offset-m3">
-	  <h2 class="card-title">Login</h2>
-	  <form> 
-	  <!-- action="/login" method="post" -->
-	      <div>
-	        <label for="username">Username:</label>
-	        <input id="username" type="text" name="username">
-	      </div>
-	      <div>
-	        <label for="password">Password:</label>
-	        <input id="password" type="password" name="password">
-	      </div>
-	      <div class='error-wrapper'>
-	        <div class='error-box' style='display: none;'></div>
-	      </div>
-	      <div>
-	        <button class="login-btn btn waves-effect waves-light">submit</button>
-	      </div>
-	  </form>
+ <nav class="navbar">
+  <div class="nav-wrapper">
+    <span class="brand-logo">Tennis Buddy</span>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="sass.html">Recent Matches</a></li>
+      <li><a href="badges.html">Buddies</a></li>
+      <li><a href="collapsible.html">Sign Up</a></li>
+    </ul>
+  </div>
+</nav>
 
-	  <p>
-	    <a href="/signup">Create an Account &rarr;</a>
-	  <p>
+<div class="landing">
+	<div class="row">
+		<div class="card-panel large white z-depth-5 col s12 m6 offset-m3">
+		  <h2 class="card-title">Login</h2>
+		  <form> 
+		  <!-- action="/login" method="post" -->
+		      <div>
+		        <label for="username">Username:</label>
+		        <input id="username" type="text" name="username">
+		      </div>
+		      <div>
+		        <label for="password">Password:</label>
+		        <input id="password" type="password" name="password">
+		      </div>
+		      <div class='error-wrapper'>
+		        <div class='error-box' style='display: none;'></div>
+		      </div>
+		      <div>
+		        <button class="login-btn btn waves-effect waves-light">submit</button>
+		      </div>
+		  </form>
+
+		  <p>
+		    <a href="/signup">Create an Account &rarr;</a>
+		  <p>
+		</div>
 	</div>
 </div>

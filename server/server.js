@@ -5,6 +5,7 @@
 var sfCourts = require('./mock/tennis_court_data.json');
 var port = process.env.PORT || 8888;
 
+var bodyParser = require("body-parser");
 var express = require('express');
 var User = require('./models/user.js');
 
@@ -19,6 +20,7 @@ require('./seed');
 // serve angular client
 app.use('/', express.static('../client'));
 app.use('/bower_components',  express.static(__dirname + '/bower_components'));
+app.use(bodyParser.json());
 
 // API routing
 app.use('/api', router);
@@ -33,13 +35,14 @@ router.get('/users', function(req, res) {
   // res.json({users: mock});
 });
 
+router.get('/courts', function(req, res) {
+  res.json({courts: sfCourts});
+});
+
 router.post('/users', function(req, res) {
   // post to DB with new user
 });
 
-router.get('/courts', function(req, res) {
-  res.json({courts: sfCourts});
-});
 
 // start server
 app.listen(port, function() {
