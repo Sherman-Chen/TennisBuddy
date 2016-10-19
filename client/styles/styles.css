@@ -1,5 +1,6 @@
 body {
 	background-color: mediumseagreen;
+	font-family: 'Wendy One', sans-serif;
 }
 
 .navbar {
@@ -11,7 +12,7 @@ body {
 	height: 800px;
 }
 
-.title {
+/*.title {
 	color: yellow;
 	text-align: center;
   text-shadow:
@@ -19,7 +20,7 @@ body {
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
-}
+}*/
 
 .usertab {
 	border: 1px solid black;
@@ -36,7 +37,7 @@ body {
 }
 
 .brand-logo {
-	margin-left: 3px;
+	margin-left: 15px;
 }
 
 .greeting {
@@ -47,6 +48,10 @@ body {
 .signup {
 	background-image: url('http://www.atlantisbahamas.com/media/Things%20To%20Do/Activities/Tennis/Hero/Activities_TennisCourts.jpg');
 	height: 700px;
+}
+
+.match-btn {
+	float: right;
 }
 
 
